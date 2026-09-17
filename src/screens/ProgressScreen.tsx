@@ -129,8 +129,8 @@ const styles = StyleSheet.create({
     borderRadius: radius.pill,
     backgroundColor: colors.background,
   },
-  badgeMastered: { backgroundColor: '#E6F7EF' },
-  badgeInProgress: { backgroundColor: '#E9EDFF' },
+  badgeMastered: { backgroundColor: colors.successSoft },
+  badgeInProgress: { backgroundColor: colors.primarySoft },
   badgeText: { fontSize: 12, fontWeight: '700', color: colors.textMuted },
   badgeTextActive: { color: colors.text },
 });
