@@ -39,6 +39,15 @@ export default function HomeScreen() {
         <Text style={styles.cardTitle}>말하기 연습</Text>
         <Text style={styles.cardDesc}>단어를 직접 소리내어 발음해보세요</Text>
       </Pressable>
+
+      <Pressable
+        style={[styles.card, styles.tutorCard]}
+        onPress={() => navigation.navigate('Tutor')}
+      >
+        <Text style={styles.cardEmoji}>🤖</Text>
+        <Text style={styles.cardTitle}>AI 튜터</Text>
+        <Text style={styles.cardDesc}>오늘의 단어로 AI와 짧은 영어 대화를 나눠보세요</Text>
+      </Pressable>
     </ScrollView>
   );
 }
@@ -81,6 +90,7 @@ const styles = StyleSheet.create({
   },
   listeningCard: { backgroundColor: colors.primarySoft },
   speakingCard: { backgroundColor: colors.successSoft },
+  tutorCard: { backgroundColor: colors.accentSoft },
   cardEmoji: { fontSize: 32, marginBottom: spacing.xs },
   cardTitle: { fontSize: 18, fontWeight: '700', color: colors.text, marginBottom: spacing.xs },
   cardDesc: { fontSize: 13, color: colors.textMuted },
