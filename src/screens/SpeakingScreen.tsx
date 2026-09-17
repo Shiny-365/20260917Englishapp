@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
   exampleText: { fontSize: 13, color: colors.textMuted, marginTop: spacing.sm, textAlign: 'center' },
   listenButton: {
     marginTop: spacing.md,
-    backgroundColor: '#E9EDFF',
+    backgroundColor: colors.primarySoft,
     borderRadius: radius.pill,
     paddingVertical: spacing.sm,
     paddingHorizontal: spacing.lg,
