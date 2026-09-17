@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "EnglishEar",
+    "slug": "english-ear",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "발음 연습을 위해 마이크로 말한 단어를 인식합니다.",
+        "NSSpeechRecognitionUsageDescription": "말한 단어를 텍스트로 변환해 발음을 채점합니다."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["RECORD_AUDIO"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "발음 연습을 위해 마이크로 말한 단어를 인식합니다.",
+          "speechRecognitionPermission": "말한 단어를 텍스트로 변환해 발음을 채점합니다."
+        }
+      ]
+    ]
+  }
+}
